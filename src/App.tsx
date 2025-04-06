@@ -1,6 +1,5 @@
 // src/App.tsx
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import HomePage from './pages/HomePage/HomePage';
 import SkillsPage from './pages/SkillsPage/SkillsPage';
@@ -14,7 +13,7 @@ import './App.css';
 function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <HashRouter>
         <div className="App">
           <Layout>
             <Routes>
@@ -27,7 +26,7 @@ function App() {
             </Routes>
           </Layout>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   );
 }

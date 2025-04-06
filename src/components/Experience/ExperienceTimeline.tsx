@@ -1,5 +1,4 @@
 // src/components/Experience/ExperienceTimeline.tsx
-import React from 'react';
 import styles from './ExperienceTimeline.module.css';
 import { FaBriefcase, FaBuilding } from 'react-icons/fa';
 
@@ -59,7 +58,7 @@ const ExperienceTimeline = () => {
 
   return (
     <div className={styles.timelineContainer}>
-      {experiences.map((exp, index) => (
+      {experiences.map((exp, _) => (
         <div key={exp.id} className={styles.timelineItem}>
           <div className={styles.timelineIcon}>
             <FaBriefcase />

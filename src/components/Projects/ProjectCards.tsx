@@ -1,5 +1,4 @@
 // src/components/Projects/ProjectCards.tsx
-import React from 'react';
 import styles from './ProjectCards.module.css';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 

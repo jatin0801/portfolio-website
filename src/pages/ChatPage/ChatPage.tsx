@@ -10,16 +10,6 @@ const ChatPage: React.FC = () => {
   const [question, setQuestion] = useState('');
   const [answer, setAnswer] = useState('');
   const [loading, setLoading] = useState(false);
-  
-  const suggestedQuestions = [
-    "What are the interesting projects Jatin has worked on?",
-    "What is his past experience?",
-    "Which school did he attend?",
-    "What technologies does Jatin work with?",
-    "Is Jatin available for freelance work?",
-    "What are Jatin's core skills?",
-    "Where is Jatin currently working?"
-  ];
 
   useEffect(() => {
     const query = new URLSearchParams(location.search).get('q');
@@ -70,22 +60,7 @@ const ChatPage: React.FC = () => {
 
   return (
     <div className={styles.chatPage}>
-      <div className={styles.chatContainer}>
-        {/* <div className={styles.questionsContainer}>
-          <h3 className={styles.questionsTitle}>Suggested Questions</h3>
-          <div className={styles.questionsList}>
-            {suggestedQuestions.map((q, index) => (
-              <div 
-                key={index} 
-                className={styles.questionItem}
-                onClick={() => handleQuestionSelect(q)}
-              >
-                {q}
-              </div>
-            ))}
-          </div>
-        </div> */}
-        
+      <div className={styles.chatContainer}>        
         {question && (
           <div className={styles.messageContainer}>
             <div className={styles.userMessage}>

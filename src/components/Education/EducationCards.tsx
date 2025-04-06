@@ -1,5 +1,4 @@
 // src/components/Education/EducationCards.tsx
-import React from 'react';
 import styles from './EducationCards.module.css';
 import { FaGraduationCap, FaCalendarAlt, FaMedal } from 'react-icons/fa';
 

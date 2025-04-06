@@ -1,9 +1,8 @@
 // src/components/Skills/SkillsDisplay.tsx
 import React from 'react';
 import styles from './SkillsDisplay.module.css';
-import { FaReact, FaNodeJs, FaAws, FaDocker, FaGitAlt, FaNetworkWired, FaRobot, FaChartBar, FaLanguage, FaDatabase } from 'react-icons/fa';
-import { SiTypescript, SiPython, SiMongodb, SiExpress, SiNextdotjs, SiJavascript, SiPytorch, SiDjango, SiFlask, SiMysql, SiPostgresql, SiMlflow, SiLangchain, SiOllama, SiChatbot } from 'react-icons/si';
-import { FaBots } from 'react-icons/fa6';
+import { FaReact, FaNodeJs, FaAws, FaDocker, FaGitAlt, FaNetworkWired, FaRobot, FaLanguage, FaDatabase } from 'react-icons/fa';
+import { SiPython, SiJavascript, SiPytorch, SiDjango, SiFlask, SiMysql, SiPostgresql, SiLangchain, SiOllama, SiChatbot } from 'react-icons/si';
 
 const SkillsDisplay: React.FC = () => {
   const skillCategories = [
