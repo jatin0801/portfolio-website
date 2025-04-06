@@ -1,0 +1,107 @@
+/* src/components/Experience/ExperienceTimeline.module.css */
+.timelineContainer {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+  
+  .timelineContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    width: 2px;
+    background-color: var(--border-color);
+  }
+  
+  .timelineItem {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 2.5rem;
+  }
+  
+  .timelineItem:last-child {
+    margin-bottom: 0;
+  }
+  
+  .timelineIcon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+  }
+  
+  .timelineContent {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timelineHeader {
+    margin-bottom: 1rem;
+  }
+  
+  .timelineRole {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+  }
+  
+  .timelineCompany {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 0.25rem;
+  }
+  
+  .timelinePeriod {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+  }
+  
+  .timelineDescription {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+  }
+  
+  .achievementsList {
+    padding-left: 1.25rem;
+  }
+  
+  .achievementItem {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+  
+  @media (max-width: 768px) {
+    .timelineContainer::before {
+      left: 15px;
+    }
+    
+    .timelineItem {
+      padding-left: 40px;
+    }
+    
+    .timelineIcon {
+      width: 30px;
+      height: 30px;
+      font-size: 0.8rem;
+    }
+  }
+  

@@ -1,0 +1,26 @@
+/* src/pages/ExperiencePage/ExperiencePage.module.css */
+.experiencePage {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .pageTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--text-color);
+  }
+  
+  @media (max-width: 768px) {
+    .experiencePage {
+      padding: 1rem;
+    }
+    
+    .pageTitle {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+  

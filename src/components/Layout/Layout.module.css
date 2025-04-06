@@ -1,0 +1,26 @@
+/* src/components/Layout/Layout.module.css */
+.layout {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .mainContent {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1.5rem;
+    background-color: var(--bg-color);
+    width: calc(100% - 235px); /* Ensure main content takes remaining width */
+  }
+  
+  @media (max-width: 768px) {
+    .layout {
+      flex-direction: column;
+    }
+    
+    .mainContent {
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+  

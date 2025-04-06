@@ -1,0 +1,177 @@
+/* src/components/SearchBar/SearchBar.module.css */
+.searchContainer {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+  
+  .searchForm {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    background-color: var(--bg-color);
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .searchForm.focused {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: var(--accent-color);
+  }
+  
+  .inputWrapper {
+    flex: 1;
+  }
+  
+  .searchInput {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 0.75rem 0;
+    color: var(--text-color);
+    background-color: transparent;
+  }
+  
+  .searchInput::placeholder {
+    color: var(--text-secondary);
+  }
+  
+  .searchTools {
+    display: flex;
+    align-items: center;
+  }
+  
+  .toolButton {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    margin-left: 0.75rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+  }
+  
+  .toolButton:hover {
+    background-color: var(--hover-bg);
+    color: var(--text-color);
+  }
+  
+  .searchButton {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 0.75rem;
+    transition: background-color 0.2s;
+    font-size: 12px;
+  }
+  
+  .searchButton:hover {
+    background-color: var(--accent-hover);
+  }
+  
+  .suggestedQuestions {
+    max-height: 100px;
+    overflow-y: auto;
+    margin-top: 1rem;
+    border-radius: 8px;
+    background-color: var(--bg-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    scrollbar-width: thin;
+  }
+  
+  .suggestedQuestions::-webkit-scrollbar {
+    width: 6px;
+    background: var(--bg-color);
+    background-color: var(--bg-color);
+  }
+  
+  .suggestedQuestions::-webkit-scrollbar-track {
+    background: var(--bg-color);
+    background-color: var(--bg-color);
+  }
+  
+  .suggestedQuestions::-webkit-scrollbar-thumb {
+    background-color: var(--border-color);
+    border-radius: 6px;
+    background-color: var(--bg-color);
+  }
+
+
+  .questionsContainer {
+    margin-bottom: 0.5rem;
+  }
+
+  .questionsTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+  }
+
+  .questionsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    max-height: 100px;
+    overflow-y: auto;
+  }
+
+  .questionItem {
+    background-color: var(--card-bg);
+    padding: 0.5rem 0.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    transition: background-color 0.2s, transform 0.2s;
+  }
+
+  .questionItem:hover {
+    background-color: var(--hover-bg);
+    transform: translateY(-2px);
+  }
+
+  
+  /* .questionItem {
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: background-color 0.2s;
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .questionItem:last-child {
+    border-bottom: none;
+  }
+  
+  .questionItem:hover {
+    background-color: var(--hover-bg);
+  } */
+  
+  @media (max-width: 768px) {
+    .searchContainer {
+      padding: 1rem;
+    }
+    
+    .suggestedQuestions {
+      max-height: 150px;
+    }
+  }
+  

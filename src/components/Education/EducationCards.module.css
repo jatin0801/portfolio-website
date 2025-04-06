@@ -1,0 +1,94 @@
+/* src/components/Education/EducationCards.module.css */
+.educationContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .educationCard {
+    display: flex;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .educationIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .educationContent {
+    padding: 1.5rem;
+    flex: 1;
+  }
+  
+  .educationDegree {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+  }
+  
+  .educationSpecialization {
+    color: var(--accent-color);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .educationInstitution {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+  }
+  
+  .educationPeriod {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .educationAchievements {
+    margin-top: 1rem;
+  }
+  
+  .achievementsTitle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+  }
+  
+  .achievementsList {
+    padding-left: 1.25rem;
+    color: var(--text-secondary);
+  }
+  
+  .achievementsList li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+  
+  @media (max-width: 768px) {
+    .educationCard {
+      flex-direction: column;
+    }
+    
+    .educationIcon {
+      padding: 1rem;
+      justify-content: flex-start;
+    }
+  }
+  
