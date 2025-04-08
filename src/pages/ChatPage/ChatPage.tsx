@@ -76,7 +76,7 @@ const ChatPage: React.FC = () => {
             {loading ? (
               <div className={styles.botMessage}>
                 <div className={styles.botAvatar}>
-                  <img src="dark-letter-j.png" alt="Logo" />
+                  <img src="https://i.ibb.co/j9C5Dj1v/dark-letter-j.png" alt="Logo" />
                 </div>
                 <div className={styles.messageContent}>
                   <div className={styles.messageSender}>JACK</div>
@@ -90,7 +90,7 @@ const ChatPage: React.FC = () => {
             ) : answer && (
               <div className={styles.botMessage}>
                 <div className={styles.botAvatar}>
-                  <img src="dark-letter-j.png" alt="Logo" />
+                  <img src="https://i.ibb.co/j9C5Dj1v/dark-letter-j.png" alt="Logo" />
                 </div>
                 <div className={styles.messageContent}>
                   <div className={styles.messageSender}>JACK</div>

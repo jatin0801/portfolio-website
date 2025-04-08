@@ -100,7 +100,7 @@ const Sidebar: React.FC<SideBarProps> = ({ onQuestionSelect }) => {
       
       <div className={styles.logo}>
         <span className={styles.logoIcon}>
-          <img src="dark-letter-j.png" alt="Logo" />
+          <img src="https://i.ibb.co/j9C5Dj1v/dark-letter-j.png" alt="Logo" />
         </span>
         {!isCollapsed && <span className={styles.logoText}>JACK</span>}
       </div>
