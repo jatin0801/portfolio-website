@@ -1,54 +1,93 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌐 JACK - Jatin's AI Chat Kernel
+**A Perplexity design based portfolio website**  
 
-Currently, two official plugins are available:
+A Perplexity-inspired portfolio site built using **React**, **TypeScript**, and my creative brain 🧠.  
+Clean UI, chat-like exploration, and a dynamic way to learn about my work — because your portfolio should talk back (almost).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Live at: [jatin0801.github.io/portfolio-website](https://jatin0801.github.io/portfolio-website/#/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Features
+- 🧠 Conversational Perplexity-style UI  
+- ⚡ Built with Vite, React, TypeScript  
+- 🎨 Fully responsive & modern design  
+- 🛠️ Easy to deploy with GitHub Pages  
+- ☕ Just enough fun to make you want to scroll  
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 📦 Tech Stack
+- React + TypeScript
+- Vite
+- ESLint
+- GitHub Pages (via `gh-pages` package)
+
+---
+
+## 🛠️ Setup Instructions
+
+### 1. Clone the Repo
+```bash
+git clone git@github.com:jatin0801/portfolio-website.git
+cd portfolio-website
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### 2. Install Dependencies
+```bash
+npm install
 ```
+
+### 3. Run Locally
+```bash
+npm run dev
+```
+Go to `http://localhost:5173` to view it in your browser.
+
+---
+
+## 🚀 Deploy to GitHub Pages
+
+Make sure your `homepage` field in `package.json` is set like this:
+```json
+"homepage": "https://<username>.github.io/portfolio-website"
+```
+
+Then deploy with:
+```bash
+npm run deploy
+```
+
+This will:
+- Build the project (`npm run build`)
+- Push the compiled output from `dist/` to your `gh-pages` branch
+
+---
+
+## 🌟 Show Some Love
+
+If you enjoyed it, **please consider giving this repo a ⭐**.  
+It helps more people discover and reuse it!
+
+---
+
+## ☕ Buy Me a Coffee
+
+If this project saved you time or you just enjoyed it, feel free to buy me a coffee! Your support helps me keep creating.  
+<a href="https://www.buymeacoffee.com/jatinchhabria" target="_blank">
+  <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" width="200"/>
+</a>
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
+
+---
+
+## 📬 Contact
+Feel free to reach out on [LinkedIn](https://www.linkedin.com/in/jatin-chhabria/) or open an issue if you have any questions or suggestions!
+
+---
