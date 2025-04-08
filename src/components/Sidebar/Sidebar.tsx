@@ -10,7 +10,10 @@ interface SideBarProps {
 }
 
 const Sidebar: React.FC<SideBarProps> = ({ onQuestionSelect }) => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(() => {
+    return window.innerWidth <= 768;
+  });
+  
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -20,6 +23,9 @@ const Sidebar: React.FC<SideBarProps> = ({ onQuestionSelect }) => {
 
   const handleNavigation = (path: string) => {
     navigate(path);
+    if ((!isCollapsed) && window.innerWidth <= 768) {
+      setIsCollapsed(true);
+    }
   };
 
   const handleQuestionClick = (question: string) => {
@@ -93,8 +99,10 @@ const Sidebar: React.FC<SideBarProps> = ({ onQuestionSelect }) => {
       </button>
       
       <div className={styles.logo}>
-        <span className={styles.logoIcon}>JC</span>
-        {!isCollapsed && <span className={styles.logoText}>Jatin Chhabria</span>}
+        <span className={styles.logoIcon}>
+          <img src="dark-letter-j.png" alt="Logo" />
+        </span>
+        {!isCollapsed && <span className={styles.logoText}>JACK</span>}
       </div>
       
       {!isCollapsed && (

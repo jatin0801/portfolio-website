@@ -73,6 +73,11 @@
   flex-shrink: 0;
 }
 
+.botAvatar img {
+  width: 15px;
+  height: 15px;
+}
+
 .userAvatar {
   background-color: var(--text-secondary);
   color: white;

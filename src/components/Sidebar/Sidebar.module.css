@@ -85,6 +85,12 @@
     font-weight: bold;
     color: var(--accent-color);
     margin-right: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .logoIcon img {
+    width: 20px; 
+    height: 20px;
   }
   
   .logoText {
@@ -245,7 +251,7 @@
 
     .toggleButton {
       position: static;
-      margin-right: 0.5rem;
+      margin-right: 1rem;
     }
 
     .logo {

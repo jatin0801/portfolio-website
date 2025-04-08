@@ -6,29 +6,47 @@ const ProjectCards = () => {
   const projects = [
     {
       id: 1,
+      title: "ezHire: Agentic AI for Smarter Outreach Campaigns",
+      description: "Built a full-stack web application that leverages agentic AI to generate and optimize outreach campaigns. The platform uses React (TypeScript) for a smooth frontend experience and a Flask backend, integrating LangChain agents to enable AGI-like conversational assistance for crafting highly personalized campaign sequences.",
+      technologies: ["Python", "LangChain", "Agentic AI", "React", "TypeScript", "Flask"],
+      image: "https://i.ibb.co/rKHJrX5n/Screenshot-2025-04-07-at-10-37-50-PM.png",
+      github: "https://github.com/jatin0801/ezHire",
+      liveDemo: "https://drive.google.com/file/d/1wJLZvxiOYKYWipYZ20pWNkqBOLPHaekv/preview"
+    },
+    {
+      id: 2,
       title: "ActDiffNet: Multisensor Affective State Recognition",
       description: "Built an active learning framework with diffusion models for biomedical signal synthesis to address data imbalance in emotion recognition tasks.",
       technologies: ["PyTorch", "U-Net", "Active Learning", "Diffusion Models", "Python"],
-      image: "src/assets/actdiffnet.png",
+      image: "https://i.ibb.co/N6qXLgBw/actdiffnet.png",
       github: "https://github.com/jatin0801",
       liveDemo: null
     },
     {
-      id: 2,
+      id: 3,
       title: "InsightBot: Media and Document Query Application",
       description: "Deployed a chatbot handling 1000+ queries/day using RAG and LangChain to provide intelligent responses on documents and YouTube videos.",
       technologies: ["Python", "Flask", "LangChain", "Groq API", "Pinecone", "RAG"],
-      image: "src/assets/insightbot.png",
+      image: "https://i.ibb.co/bR2nQ7LS/insightbot.png",
       github: "https://github.com/jatin0801/InsightBot",
       liveDemo: "https://drive.google.com/file/d/1tTFv2xPKZ5TfaoYXIrezdurBshz0r5Z6/preview"
     },
     {
-      id: 3,
+      id: 4,
       title: "eKrishi: A One-Stop Portal for Farmers",
       description: "Developed a multilingual web app for crop recommendations, disease detection, and direct e-commerce to improve profitability for farmers.",
       technologies: ["Machine Learning", "Python", "Flask", "Google Translate API"],
-      image: "/images/projects/smart-home.jpg",
+      image: "https://user-images.githubusercontent.com/75525185/111887391-d5feb180-89fa-11eb-8982-d7c7187734fd.gif",
       github: "https://github.com/jatinchhabria/smart-home",
+      liveDemo: null
+    },
+    {
+      id: 5,
+      title: "shopX: Modern Shopping Experience",
+      description: "Built a responsive and intuitive e-commerce platform using React and Redux, enabling users to browse, search, and manage cart items with seamless state management. Designed for scalability and optimized user experience.",
+      technologies: ["React", "Redux", "JavaScript", "CSS", "HTML", "Stripe API"],
+      image: "https://i.ibb.co/xSJ57yWM/shopX.png",
+      github: "https://github.com/jatin0801/E-Commerce-Website",
       liveDemo: null
     }
   ];

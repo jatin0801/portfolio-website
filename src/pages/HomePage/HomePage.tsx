@@ -62,7 +62,7 @@ const HomePage: React.FC = () => {
           </a>
         </div>
         <div className={styles.language}>
-          <span>English</span>
+          <span>© JACK-Jatin's AI Chat Kernel</span>
         </div>
       </div>
     </div>
