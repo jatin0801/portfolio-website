@@ -5,13 +5,23 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 const ProjectCards = () => {
   const projects = [
     {
-      id: 1,
+      id: 0,
       title: "ezHire: Agentic AI for Smarter Outreach Campaigns",
       description: "Built a full-stack web application that leverages agentic AI to generate and optimize outreach campaigns. The platform uses React (TypeScript) for a smooth frontend experience and a Flask backend, integrating LangChain agents to enable AGI-like conversational assistance for crafting highly personalized campaign sequences.",
       technologies: ["Python", "LangChain", "Agentic AI", "React", "TypeScript", "Flask"],
       image: "https://i.ibb.co/rKHJrX5n/Screenshot-2025-04-07-at-10-37-50-PM.png",
       github: "https://github.com/jatin0801/ezHire",
       liveDemo: "https://drive.google.com/file/d/1wJLZvxiOYKYWipYZ20pWNkqBOLPHaekv/preview"
+    },
+    {
+      id: 0,
+      title: "JACK: Jatin's AI Chat Kernel",
+      description:
+        "A Perplexity-inspired portfolio site built using React, TypeScript, and my creative brain. Combines clean design with conversational UI to make exploring my work as fun as chatting with Perplexity (but better looking).",
+      technologies: ["React", "TypeScript", "CSS", "Creativity"],
+      image: "https://i.ibb.co/hxm33wH3/JACK-portfolio-website.png",
+      github: "https://github.com/jatin0801/portfolio-website",
+      liveDemo: "https://jatin0801.github.io/portfolio-website/#/",
     },
     {
       id: 2,

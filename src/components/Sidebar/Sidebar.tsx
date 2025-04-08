@@ -169,8 +169,8 @@ const Sidebar: React.FC<SideBarProps> = ({ onQuestionSelect }) => {
           <div className={styles.recentItem} onClick={() => handleQuestionClick('who is the best software engineer in the world?')}>
             who is the best software engineer in the world?
           </div>
-          <div className={styles.recentItem} onClick={() => handleQuestionClick('who has the most impressive skills?')}>
-            who has the most impressive skills?
+          <div className={styles.recentItem} onClick={() => handleQuestionClick('what hobbies keep Jatin entertained?')}>
+            what hobbies keep Jatin entertained?
           </div>
         </div>
       )}

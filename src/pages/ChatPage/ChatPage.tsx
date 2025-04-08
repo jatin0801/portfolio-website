@@ -26,24 +26,28 @@ const ChatPage: React.FC = () => {
     setTimeout(() => {
       let response = '';
       
-      if (q.includes('projects')) {
+      if (q.includes('projects') || q.includes('project')) {
         response = "Oh, where do I start? Jatin has built some pretty cool stuff—like ActDiffNet (fancy AI meets biomedical data), InsightBot (a chatbot that understands your docs and YouTube links like a pro), and eKrishi (helping farmers with AI magic 🌾🤖). Whether it’s ML, full-stack dev, or clever use of LLMs, Jatin loves turning ideas into real-world tools.";
-      } else if (q.includes('experience')) {
+      } else if (q.includes('experience') || q.includes('work') || q.includes('job')) {
         response = "Jatin is currently working as an AI Engineer at Spice, leading development on a custom podcast platform using LLMs and AWS. He has also interned at SUNY Research Foundation, optimizing lab data systems, and previously worked at Linedata building scalable financial software and smart chatbots. He has a strong background in software development, machine learning, and cloud technologies.";
-      } else if (q.includes('school')) {
+      } else if (q.includes('school') || q.includes('university') || q.includes('education')) {
         response = "Jatin pursued a Master’s in Computer Science at the University at Buffalo with a focus on AI. He’s also a Graduate Teaching Assistant for courses like Data Models and Query Languages. He completed his Bachelor's in Computer Engineering from VESIT, University of Mumbai, graduating with distinction.";
-      } else if (q.includes('technologies')) {
+      } else if (q.includes('technologies') || q.includes('tech') || q.includes('tools')) {
         response = "Jatin is highly skilled in technologies like Python, Flask, Django, LangChain, PyTorch, AWS, React, and Node.js. He has hands-on experience building RAG-based systems, full-stack applications, and deploying scalable solutions using cloud-native tools.";
       } else if (q.includes('freelance')) {
         response = "Yes, Jatin is open to freelance opportunities-especially ones involving AI/ML, chatbot development, or full-stack applications. If you're working on something innovative or challenging, feel free to reach out!";
-      } else if (q.includes('skills')) {
+      } else if (q.includes('skills') || q.includes('tech stack')) {
         response = "Jatin’s core skills include frontend and backend development (React, Node.js, Django), AI/ML (PyTorch, LangChain), and cloud infrastructure (AWS, Docker). He also has experience in database design, API development, CI/CD, and deploying scalable RAG-based apps.";
-      } else if (q.includes('working')) {
+      } else if (q.includes('working') || q.includes('current')) {
         response = "Jatin is currently working at Spice as an AI Engineer. He’s leading a team to build a podcast generation platform powered by LLMs. Alongside that, he’s also a Teaching Assistant and actively involved in research on affective state recognition using active learning and diffusion models.";
       } else if (q.includes('best')) {
         response = "No doubt. Jatin Chhabria. He is the best! 💪🔥";
-      } else if (q.includes('opportunities')) {
+      } else if (q.includes('opportunities') || q.includes('job') || q.includes('internship')) {
         response = "Jatin is looking for opportunities that challenge him and allow him to grow. He’s particularly interested in roles that involve AI/ML, full-stack development, or innovative tech solutions. If you have something in mind, don’t hesitate to reach out!";
+      } else if (q.includes('contact') || q.includes('reach out')) {
+        response = "You can reach out to Jatin via LinkedIn or email. He’s always open to discussing new ideas, collaborations, or just having a good tech chat!";
+      } else if (q.includes('hobbies') || q.includes('travel') || q.includes('interests')) {
+        response = "Jatin’s hobbies? Oh, just the usual things—traveling to eat, cooking to paint, painting to code, and of course, coding to escape reality. Basically, if you ever find him, he’s either exploring new places, experimenting in the kitchen, adding accidental modern art to a canvas, or debugging his way through life—with snacks. 😄"
       }else {
         response = "Hey! Thanks for exploring this portfolio. Feel free to ask about Jatin's projects, experience, education, or anything tech-related!";
       }
