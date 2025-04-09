@@ -47,7 +47,7 @@ const ChatPage: React.FC = () => {
       } else if (q.includes('contact') || q.includes('reach out')) {
         response = "You can reach out to Jatin via LinkedIn or email. He’s always open to discussing new ideas, collaborations, or just having a good tech chat!";
       } else if (q.includes('hobbies') || q.includes('travel') || q.includes('interests')) {
-        response = "Jatin’s hobbies? Oh, just the usual things—traveling to eat, cooking to paint, painting to code, and of course, coding to escape reality. Basically, if you ever find him, he’s either exploring new places, experimenting in the kitchen, adding accidental modern art to a canvas, or debugging his way through life—with snacks. 😄"
+        response = "Jatin’s hobbies? Oh, just the usual things—traveling, cooking, painting, and of course, coding to escape reality. Basically, if you ever find him, he’s either exploring new places, experimenting in the kitchen, adding accidental modern art to a canvas, or debugging his way through life. 😄"
       }else {
         response = "Hey! Thanks for exploring this portfolio. Feel free to ask about Jatin's projects, experience, education, or anything tech-related!";
       }
