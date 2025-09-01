@@ -61,6 +61,9 @@ const HomePage: React.FC = () => {
             <FaPhone size={24} />
           </a>
         </div>
+        <div className={styles.lastUpdated}>
+          <span>Last Updated: May 2025</span>
+        </div>
         <div className={styles.language}>
           <span>© JACK-Jatin's AI Chat Kernel</span>
         </div>

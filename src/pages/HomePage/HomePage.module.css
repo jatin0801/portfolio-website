@@ -121,10 +121,14 @@
   color: var(--text-color);
 }
 
+.lastUpdated {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
 .language {
   color: var(--text-secondary);
   font-size: 0.9rem;
-  cursor: pointer;
 }
 
 @media (max-width: 768px) {
