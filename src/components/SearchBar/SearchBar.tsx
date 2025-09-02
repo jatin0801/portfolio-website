@@ -1,7 +1,7 @@
 // src/components/SearchBar/SearchBar.tsx
 import React, { useState } from 'react';
 import styles from './SearchBar.module.css';
-import { FaSearch, FaLaptop, FaCode, FaBriefcase } from 'react-icons/fa';
+import { FaSearch, FaMicrophone } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
 interface SearchBarProps {
@@ -61,14 +61,8 @@ const SearchBar: React.FC<SearchBarProps> = ({ onQuestionSelect }) => {
           />
         </div>
         <div className={styles.searchTools}>
-          <button type="button" className={styles.toolButton} title="Projects" onClick={() => handleNavigation('/projects')}>
-            <FaLaptop />
-          </button>
-          <button type="button" className={styles.toolButton} title="Skills" onClick={() => handleNavigation('/skills')}>
-            <FaCode />
-          </button>
-          <button type="button" className={styles.toolButton} title="Experience" onClick={() => handleNavigation('/experience')}>
-            <FaBriefcase />
+          <button type="button" className={styles.toolButton} title="Talk to JACK" onClick={() => handleNavigation('/talk-to-jack')}>
+            <FaMicrophone />
           </button>
           <button type="submit" className={styles.searchButton} title="Search">
             <FaSearch />

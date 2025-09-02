@@ -13,7 +13,7 @@ const HomePage: React.FC = () => {
   const [titleIndex, setTitleIndex] = useState(0);
   const titles = ["AI Engineer", "Software Engineer", "Traveler", "Tech Enthusiast", "Foodie", "Artist"];
   const navigate = useNavigate();
-  
+
   const handleQuestionSelect = (question: string) => {
     navigate(`/chat?q=${encodeURIComponent(question)}`);
   };
@@ -22,10 +22,10 @@ const HomePage: React.FC = () => {
     const interval = setInterval(() => {
       setTitleIndex((prevIndex) => (prevIndex + 1) % titles.length);
     }, 2000);
-    
+
     return () => clearInterval(interval);
   }, []);
-  
+
   return (
     <div className={styles.homePage}>
       <div className={styles.headerActions}>

@@ -1,0 +1,134 @@
+.talkToJackPage {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.mainContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  flex: 1;
+}
+
+.avatarSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatarContainer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.avatarContainer.speaking {
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  transform: scale(1.05);
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.speakingIndicator {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 4px;
+  align-items: end;
+}
+
+.soundWave {
+  width: 4px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 2px;
+  animation: soundWave 1.5s ease-in-out infinite;
+}
+
+.soundWave:nth-child(1) {
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.soundWave:nth-child(2) {
+  height: 30px;
+  animation-delay: 0.2s;
+}
+
+.soundWave:nth-child(3) {
+  height: 25px;
+  animation-delay: 0.4s;
+}
+
+@keyframes soundWave {
+  0%, 100% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .talkToJackPage {
+    padding: 1rem;
+  }
+  
+  .pageTitle {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .mainContent {
+    gap: 2rem;
+  }
+  
+  .avatarContainer {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .header {
+    margin-bottom: 2rem;
+  }
+}

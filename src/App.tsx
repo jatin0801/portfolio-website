@@ -7,6 +7,7 @@ import ExperiencePage from './pages/ExperiencePage/ExperiencePage';
 import EducationPage from './pages/EducationPage/EducationPage';
 import ProjectPage from './pages/ProjectPage/ProjectPage';
 import ChatPage from './pages/ChatPage/ChatPage';
+import TalkToJackPage from './pages/TalkToJackPage/TalkToJackPage';
 import { ThemeProvider } from './contexts/ThemeContext';
 import './App.css';
 
@@ -23,6 +24,7 @@ function App() {
               <Route path="/education" element={<EducationPage />} />
               <Route path="/chat" element={<ChatPage />} />
               <Route path="/projects" element={<ProjectPage />} />
+              <Route path="/talk-to-jack" element={<TalkToJackPage />} />
             </Routes>
           </Layout>
         </div>

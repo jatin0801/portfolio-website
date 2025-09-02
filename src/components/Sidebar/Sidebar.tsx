@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import styles from './Sidebar.module.css';
-import { FaHome, FaCode, FaBriefcase, FaGraduationCap, FaBars, FaTimes } from 'react-icons/fa';
+import { FaHome, FaCode, FaBriefcase, FaGraduationCap, FaBars, FaTimes, FaMicrophone } from 'react-icons/fa';
 import { FaLaptop } from 'react-icons/fa6';
 
 interface SideBarProps {
@@ -133,6 +133,12 @@ const Sidebar: React.FC<SideBarProps> = ({ onQuestionSelect }) => {
             onClick={() => handleNavigation('/')}
           >
             <FaHome /> {!isCollapsed && <span>Home</span>}
+          </li>
+          <li 
+            className={isActive('/talk-to-jack') ? styles.active : ''}
+            onClick={() => handleNavigation('/talk-to-jack')}
+          >
+            <FaMicrophone /> {!isCollapsed && <span>Talk to JACK</span>}
           </li>
           <li 
             className={isActive('/skills') ? styles.active : ''}
