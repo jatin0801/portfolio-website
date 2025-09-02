@@ -13,7 +13,7 @@ interface ChatMessage {
   content: string;
 }
 
-const groq = new GroqService(import.meta.env.VITE_GROQ_API_KEY);
+const groq = new GroqService(import.meta.env.VITE_GROQ_API_KEY as string);
 const tts = new SpeechSynthesisService();
 
 const TalkToJackPage: React.FC = () => {
