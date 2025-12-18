@@ -62,7 +62,7 @@ const HomePage: React.FC = () => {
           </a>
         </div>
         <div className={styles.lastUpdated}>
-          <span>Last Updated: May 2025</span>
+          <span>Last Updated: Dec 2025</span>
         </div>
         <div className={styles.language}>
           <span>© JACK-Jatin's AI Chat Kernel</span>

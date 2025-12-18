@@ -6,6 +6,15 @@ const ProjectCards = () => {
   const projects = [
     {
       id: 0,
+      title: "Evenly: Universal Bill Split Extractor",
+      description: "Built a browser extension that automates bill splitting by using AI agents to extract order details from any e-commerce site and syncing expenses to Google Sheets in one click, powered by a Node.js backend. Delivered a zero-setup, no-login UX with automatic and flexible splits, reducing post-purchase effort by 90%.",
+      technologies: ["Node.js", "AgentQL", "Agentic AI", "JavaScript", "Chrome Extension", "Google Sheets API"],
+      image: "https://i.ibb.co/XkfNMPTV/Evenly-logo-2-2.png",
+      github: "https://github.com/jatin0801/evenly",
+      liveDemo: "https://www.youtube.com/watch?v=sXupP3Xp3gc"
+    },
+    {
+      id: 1,
       title: "ezHire: Agentic AI for Smarter Outreach Campaigns",
       description: "Built a full-stack web application that leverages agentic AI to generate and optimize outreach campaigns. The platform uses React (TypeScript) for a smooth frontend experience and a Flask backend, integrating LangChain agents to enable AGI-like conversational assistance for crafting highly personalized campaign sequences.",
       technologies: ["Python", "LangChain", "Agentic AI", "React", "TypeScript", "Flask"],
@@ -14,7 +23,7 @@ const ProjectCards = () => {
       liveDemo: "https://drive.google.com/file/d/1wJLZvxiOYKYWipYZ20pWNkqBOLPHaekv/preview"
     },
     {
-      id: 0,
+      id: 2,
       title: "JACK: Jatin's AI Chat Kernel",
       description:
         "A Perplexity-inspired portfolio site built using React, TypeScript, and my creative brain. Combines clean design with conversational UI to make exploring my work as fun as chatting with Perplexity (but better looking).",
@@ -58,7 +67,7 @@ const ProjectCards = () => {
       image: "https://i.ibb.co/N6qXLgBw/actdiffnet.png",
       github: null,
       liveDemo: null,
-      conference: "https://conferences.computer.org/chase2025/"
+      conference: "https://dl.acm.org/doi/10.1145/3721201.3724415"
     },
     {
       id: 7,
@@ -68,7 +77,7 @@ const ProjectCards = () => {
       image: "https://i.ibb.co/mCwFT928/Picture2.jpg",
       github: null,
       liveDemo: null,
-      conference: "https://bsn.embs.org/2025/"
+      conference: "https://openreview.net/forum?id=9ge6Glg8od&referrer=%5Bthe%20profile%20of%20Sreyasee%20Das%20Bhattacharjee%5D(%2Fprofile%3Fid%3D~Sreyasee_Das_Bhattacharjee2)"
     },
   ];
   return (
@@ -99,7 +108,7 @@ const ProjectCards = () => {
               )}
               {project.conference && (
                 <a href={project.conference} className={styles.projectLink} target="_blank" rel="noopener noreferrer">
-                  <FaNewspaper /> Conference
+                  <FaNewspaper /> Publication
                 </a>
               )}
             </div>
