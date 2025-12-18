@@ -6,9 +6,24 @@ const ExperienceTimeline = () => {
   const experiences = [
     {
       id: 1,
+      role: "Software Engineer",
+      company: "Peeva Inc.",
+      period: "Jun 2025 - Present",
+      description: "Owned end-to-end development across product, engineering, and operations, contributing to core platform features, system maintenance, and business workflows.",
+      achievements: [
+        "Handled full software lifecycle including feature development, maintenance, bug fixes, and technical documentation",
+        "Built and maintained backend services and integrations supporting core business operations",
+        "Integrated email workflows and marketing automation tools to improve customer communication and lead management",
+        "Improved reliability of .NET/C# payment services by refactoring Stripe workflows, reducing transactional inconsistencies.",
+        "Shipped a lost-pet alert feature using FastAPI, MongoDB, CI/CD pipelines, unlocking a new monetizable product line.",
+        "Redesigned React UI, collaborated with customer teams to prioritize enhancements, driving a 25% reduction in user complaints."
+      ]
+    },
+    {
+      id: 2,
       role: "AI Engineer",
       company: "Spice",
-      period: "Jan 2025 - Present",
+      period: "Jan 2025 - May 2025",
       description: "Architected and led the development of an AI-driven podcast customization platform, overseeing all phases from design to deployment.",
       achievements: [
         "Reduced podcast generation latency by 30% through code and workflow optimization",
@@ -18,7 +33,7 @@ const ExperienceTimeline = () => {
       ]
     },
     {
-      id: 2,
+      id: 3,
       role: "Software Engineer Intern",
       company: "SUNY Research Foundation",
       period: "January 2024 - Dec 2024",
@@ -30,7 +45,7 @@ const ExperienceTimeline = () => {
       ]
     },
     {
-      id: 3,
+      id: 4,
       role: "Software Engineer",
       company: "Linedata",
       period: "June 2022 - July 2023",
@@ -43,7 +58,7 @@ const ExperienceTimeline = () => {
       ]
     },
     {
-      id: 4,
+      id: 5,
       role: "Software Engineer Intern",
       company: "VESIT Admission Team",
       period: "2019 - 2021",
