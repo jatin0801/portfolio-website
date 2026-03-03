@@ -5,10 +5,23 @@ import { FaBriefcase, FaBuilding } from 'react-icons/fa';
 const ExperienceTimeline = () => {
   const experiences = [
     {
+      id: 0,
+      role: "Software Engineer",
+      company: "MAQ Software",
+      period: "Feb 2026 - Present",
+      description: "Supporting LinkedIn’s MCV1 → MCV2 migration, focused on REST to gRPC transformation and control plane infrastructure setup.",
+      achievements: [
+        "Assisting in REST to gRPC service migration to improve performance and service reliability.",
+        "Supporting server-side setup in the control plane and infrastructure layer for multiple internal use cases.",
+        "Provisioning multi-tenant environments to enable cross-team onboarding.",
+        "Collaborating with engineering teams to transition services from legacy to next-gen platform."
+      ]
+    },
+    {
       id: 1,
       role: "Software Engineer",
       company: "Peeva Inc.",
-      period: "Jun 2025 - Present",
+      period: "Jun 2025 - Dec 2025",
       description: "Owned end-to-end development across product, engineering, and operations, contributing to core platform features, system maintenance, and business workflows.",
       achievements: [
         "Handled full software lifecycle including feature development, maintenance, bug fixes, and technical documentation",
