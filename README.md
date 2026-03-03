@@ -5,7 +5,7 @@
 A Perplexity-inspired portfolio site built using **React**, **TypeScript**, and my creative brain 🧠.  
 Clean UI, chat-like exploration, and a dynamic way to learn about my work — because your portfolio should talk back (almost).
 
-Live at: [jatin0801.github.io/portfolio-website](https://jatin0801.github.io/portfolio-website/#/)
+Live at: [https://jatinchhabria.dev](https://jatinchhabria.dev)
 
 ---
 
